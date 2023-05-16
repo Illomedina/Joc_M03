@@ -6,8 +6,8 @@ import java.nio.charset.StandardCharsets;
 
 public class lecturaFitxers{
     public static ParaulaJoc [] llegirFitxer(String fitxer, ParaulaJoc [] llistaObjectes){
-         String stringValors;
-        File paraules_joc = new File(fitxer);
+        String stringValors;
+        File paraules_joc = new File("paraules-partides.txt");
         try (Scanner sc = new Scanner(paraules_joc, StandardCharsets.UTF_8))
         { 
             for(int i = 0; i < llistaObjectes.length && sc.hasNext(); i++){
