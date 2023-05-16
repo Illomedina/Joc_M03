@@ -7,17 +7,17 @@ import java.nio.charset.StandardCharsets;
 public class lecturaFitxers{
     public static ParaulaJoc [] llegirFitxer(String fitxer, ParaulaJoc [] llistaObjectes){
         String stringValors;
-        File paraules_joc = new File("paraules-partides.txt");
-        try (Scanner sc = new Scanner(paraules_joc, StandardCharsets.UTF_8))
+        File paraules_joc = new File("J:/Github/M3/joc_M03/Joc_M03/historic/M03_Joc/HISTORIC/M03_Joc/paraules-partides.txt");
+        //int i = 0;
+        try (Scanner sc = new Scanner(paraules_joc,StandardCharsets.UTF_8.name()))
         { 
             for(int i = 0; i < llistaObjectes.length && sc.hasNext(); i++){
             //Mentre hague una linea
                 stringValors = sc.nextLine();
-                System.out.println(stringValors);
+                //System.out.println(stringValors);
                 //Cada vegada que trobe un string anem a crear un objecte i guardarlo en l'array de Objectes
                 llistaObjectes[i] = new ParaulaJoc(stringValors);
-            }
-             
+            }            
         }catch (IOException e) {
             e.printStackTrace();
         }

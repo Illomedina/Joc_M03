@@ -23,7 +23,7 @@ public class ejemploFichero {
 
     public static void main(String[] args) {
         File file = new File("/home/super/Escritorio/historic/paraules-partides.txt");
-        try (Scanner sc = new Scanner(file, StandardCharsets.UTF_8))
+        try (Scanner sc = new Scanner(file, StandardCharsets.UTF_8.name()))
         {
             // Llegeix 1er llibre
             String palabraCA = sc.nextLine();
