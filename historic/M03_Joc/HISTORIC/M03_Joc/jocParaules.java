@@ -6,7 +6,7 @@ public class jocParaules {
      //longitud del Array
      final int N = 4; 
     //Declaración de la Arrray d'objectes
-    paraulaJoc[] llistaparaules = new paraulaJoc[N]; 
+    ParaulaJoc[] llistaparaules = new ParaulaJoc[N]; 
         
     //declarar scanner
     Scanner sc = new Scanner(System.in);
@@ -65,9 +65,7 @@ public class jocParaules {
     }
     while(opcio!= 3);
     //Sortint de l'aplicació
-    System.out.println("Sortint de l'aplicació");
-    break;
-    
+    System.out.println("Sortint de l'aplicació");    
     
     
 

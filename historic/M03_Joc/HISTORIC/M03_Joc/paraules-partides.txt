@@ -15,3 +15,4 @@ ratón;mouse;0;0
 banco;bank;0;0
 impresora;printer;0;0
 redención;redemption;0;0
+ordenador;computer;0;0

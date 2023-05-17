@@ -53,7 +53,7 @@ public class ParaulaJoc {
     }
 
     public String toString(){
-        return this.paraulaCatala + " " + this.paraulaAngles + " " + this.intentsCA + " " + this.intentsAC;
+        return this.paraulaCatala +";"+ this.paraulaAngles +";"+ this.intentsCA + ";" + this.intentsAC;
     }
 
     
