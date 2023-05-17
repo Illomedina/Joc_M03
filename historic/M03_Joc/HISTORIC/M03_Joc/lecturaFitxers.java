@@ -4,11 +4,12 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+
 public class lecturaFitxers{
     public static ParaulaJoc [] llegirFitxer(String fitxer, ParaulaJoc [] llistaObjectes){
         String stringValors;
-        File paraules_joc = new File("J:/Github/M3/joc_M03/Joc_M03/historic/M03_Joc/HISTORIC/M03_Joc/paraules-partides.txt");
-        //int i = 0;
+        //File paraules_joc = new File("J:/Github/M3/joc_M03/Joc_M03/historic/M03_Joc/HISTORIC/M03_Joc/paraules-partides.txt");
+        File paraules_joc = new File(fitxer);
         try (Scanner sc = new Scanner(paraules_joc,StandardCharsets.UTF_8.name()))
         { 
             for(int i = 0; i < llistaObjectes.length && sc.hasNext(); i++){
@@ -29,7 +30,7 @@ public class lecturaFitxers{
   public static void main(String[] args) {
     ParaulaJoc [] llistaParaules = new ParaulaJoc [10];
 
-    llistaParaules = lecturaFitxers.llegirFitxer("paraules-partides.txt", llistaParaules);
+    lecturaFitxers.llegirFitxer("/home/super/Joc/Joc_M03/historic/M03_Joc/HISTORIC/M03_Joc/paraules-partides.txt", llistaParaules);
     for(int i = 0; i < llistaParaules.length; i++){
         System.out.println(llistaParaules[i].toString());
 
